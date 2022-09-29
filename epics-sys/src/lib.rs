@@ -1,6 +1,6 @@
-#![feature(extern_crate_item_prelude)]
-#![feature(concat_idents)]
-#![recursion_limit = "128"]
+//#![feature(extern_crate_item_prelude)]
+//#![feature(concat_idents)]
+//#![recursion_limit = "128"]
 
 // Rust std crate must be imported like this
 extern crate proc_macro;
