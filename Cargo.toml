@@ -1,5 +1,15 @@
-[workspace]
-members = [
-        "epics-sys",
-        "my-example",
-]
+[package]
+name = "epics-sys"
+version = "0.0.5"
+authors = ["Niklas Claesson <nicke.claesson@gmail.com>"]
+description = "Simplify rust usage in EPICS"
+license = "MIT"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = {version="0.15", features=["full", "extra-traits"]}
+quote = "0.6"
+proc-macro2 = "0.4"
